@@ -1,6 +1,8 @@
 package com.example.composeweatherapp.data.repository
 
 import com.example.composeweatherapp.data.api.WeatherApiService
+import com.example.composeweatherapp.domain.model.City
+import com.example.composeweatherapp.domain.model.Weather
 import javax.inject.Inject
 
 // Repository for managing weather data
