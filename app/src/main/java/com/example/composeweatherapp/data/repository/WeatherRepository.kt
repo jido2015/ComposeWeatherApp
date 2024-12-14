@@ -13,7 +13,7 @@ class WeatherRepository @Inject constructor(
     // Fetch weather data and return a Result wrapper
     suspend fun fetchWeather(city: String): Result<Weather> {
         return try {
-            val response = weatherApi.getWeatherByCity(city, "cd9d20a19ea34a019e1230657241112") // Make API call
+            val response = weatherApi.getWeatherByCity(city, "") // Make API call
             if (response.isSuccessful) {
                 val body = response.body()
                 if (body != null) {
