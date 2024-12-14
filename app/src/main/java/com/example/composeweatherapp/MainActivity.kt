@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.composeweatherapp.ui.theme.WeatherAppTheme
+import com.example.composeweatherapp.ui.screen.WeatherScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 

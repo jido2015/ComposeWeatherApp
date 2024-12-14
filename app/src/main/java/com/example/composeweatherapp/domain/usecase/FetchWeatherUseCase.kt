@@ -9,10 +9,10 @@ import javax.inject.Inject
 // Use case for fetching weather data
 class FetchWeatherUseCase @Inject constructor(private val repository: WeatherRepository) {
     suspend fun fetchWeatherByCity(city: String): Result<Weather> {
-        return repository.fetchWeather(city) // Invoke the repository method
+        return repository.fetchWeather(city)
     }
 
     suspend fun searchCities(query: String): Result<List<City>> {
-        return repository.searchCities(query) // Invoke the repository method
+        return repository.searchCities(query)
     }
 }

@@ -4,6 +4,7 @@ import com.example.composeweatherapp.data.api.WeatherApiService
 import com.example.composeweatherapp.domain.model.City
 import com.example.composeweatherapp.domain.model.Weather
 import javax.inject.Inject
+import com.example.composeweatherapp.domain.model.Result
 
 // Repository for managing weather data
 class WeatherRepository @Inject constructor(
@@ -16,15 +17,15 @@ class WeatherRepository @Inject constructor(
             if (response.isSuccessful) {
                 val body = response.body()
                 if (body != null) {
-                    Result.Success(body) // Return successful result
+                    Result.Success(body)
                 } else {
-                    Result.Error("No data available") // Handle case where body is null
+                    Result.Error("No data available")
                 }
             } else {
-                Result.Error("Error: ${response.code()} - ${response.message()}") // Handle API error response
+                Result.Error("Error: ${response.code()} - ${response.message()}")
             }
         } catch (e: Exception) {
-            Result.Error("Exception: ${e.message}") // Handle exceptions during the API call
+            Result.Error("Exception: ${e.message}")
         }
     }
 
@@ -34,15 +35,15 @@ class WeatherRepository @Inject constructor(
             if (response.isSuccessful) {
                 val body = response.body()
                 if (body != null) {
-                    Result.Success(body) // Return successful result
+                    Result.Success(body)
                 } else {
-                    Result.Error("No data available") // Handle case where body is null
+                    Result.Error("No data available")
                 }
             } else {
-                Result.Error("Error: ${response.code()} - ${response.message()}") // Handle API error response
+                Result.Error("Error: ${response.code()} - ${response.message()}")
             }
         } catch (e: Exception) {
-            Result.Error("Exception: ${e.message}") // Handle exceptions during the API call
+            Result.Error("Exception: ${e.message}")
         }
     }
 }
