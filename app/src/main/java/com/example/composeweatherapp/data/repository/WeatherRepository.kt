@@ -31,7 +31,7 @@ class WeatherRepository @Inject constructor(
 
     suspend fun searchCities(query: String): Result<List<City>> {
         return try {
-            val response = weatherApi.searchCities("cd9d20a19ea34a019e1230657241112", query)
+            val response = weatherApi.searchCities("", query)
             if (response.isSuccessful) {
                 val body = response.body()
                 if (body != null) {
