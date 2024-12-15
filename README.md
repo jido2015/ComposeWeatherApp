@@ -15,7 +15,7 @@ Testing: JUnit, Espresso, and Mockito for unit and UI testing.
 ## Requirements
 To use this app, you'll need an API key from OpenWeatherMap. Follow these steps:
 
-1. **Create an Account**: Visit [https://home.openweathermap.org/](https://openweathermap.org) and sign up for a free account. This process takes just a few minutes.
+1. **Create an Account**: Visit [https://www.weatherapi.com/](https://www.weatherapi.com/) and sign up for a free account. This process takes just a few minutes.
 2. **Obtain Your API Key**: Once your account is created, navigate to the API section and generate your API key.
 
 ## Configuration
